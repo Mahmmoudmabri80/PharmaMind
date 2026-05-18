@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PharmaMind | الحلول الرقمية للرعاية الصحية</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; scroll-behavior: smooth; }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        medical: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            600: '#1d4ed8',
+                            700: '#1d40b0',
+                            800: '#1e3a8a',
+                            900: '#0f172a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-2xl font-bold text-medical-600 tracking-wide">Pharma<span class="text-medical-800">Mind</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-reverse space-x-8 text-gray-600 font-medium">
+                <a href="#hero" class="hover:text-medical-600 transition">الرئيسية</a>
+                <a href="#services" class="hover:text-medical-600 transition">خدماتنا</a>
+                <a href="#why-us" class="hover:text-medical-600 transition">لماذا نحن؟</a>
+                <a href="#contact" class="hover:text-medical-600 transition">تواصل معنا</a>
+            </nav>
+            <div>
+                <a href="#contact" class="bg-medical-600 text-white px-5 py-2 rounded-lg font-semibold hover:bg-medical-700 transition shadow-md text-sm">
+                    استشارة مجانية
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="bg-gradient-to-b from-medical-50 to-white py-20">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <span class="bg-medical-100 text-medical-700 text-xs px-4 py-1.5 rounded-full font-semibold uppercase tracking-wider">مستقبل الرعاية الصحية الرقمية</span>
+            <h1 class="text-4xl md:text-5xl font-bold text-medical-900 mt-6 leading-tight">
+                نحوّل البيانات الطبية إلى <span class="text-medical-600">قرارات ذكية</span> تحمي المرضى
+            </h1>
+            <p class="text-gray-600 text-lg mt-6 leading-relaxed max-w-2xl mx-auto">
+                منصة مخصصة لتقديم الاستشارات الطبية المتقدمة، التدريب على مكافحة العدوى، وتطوير الأنظمة البرمجية لمراقبة مقاومة مضادات الميكروبات (AMR) وإدارة الجودة داخل المنشآت الصحية.
+            </p>
+            <div class="mt-10 flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#contact" class="w-full sm:w-auto bg-medical-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-medical-700 transition shadow-lg shadow-blue-200 text-center">
+                    اطلب العرض التجريبي (Demo)
+                </a>
+                <a href="#services" class="w-full sm:w-auto bg-white border border-gray-200 text-gray-700 px-8 py-3 rounded-xl font-semibold hover:bg-gray-50 transition text-center">
+                    اكتشف حلولنا
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold text-medical-900">حلولنا المتكاملة للقطاع الصحي</h2>
+                <p class="text-gray-500 mt-4">ندمج الخبرة العلمية الطبية العميقة بأحدث التقنيات البرمجية لتلبية احتياجات المصحات والمستشفيات الحديثة.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-medical-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-medical-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-medical-900 mb-3">أنظمة مراقبة العدوى والـ AMR</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        تطوير لوحات تحكم (Dashboards) رقمية متصلة بقواعد بيانات سحابية لمراقبة البكتيريا المقاومة للمضادات وتتبع نمط انتشار الأوبئة داخل الأقسام الحساسة.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-medical-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-medical-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.753 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-medical-900 mb-3">التدريب وبناء الكوادر الطبية</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        تصميم وتنفيذ برامج تدريبية إستراتيجية للأطقم الطبية والطبية المساعدة وفقاً لأحدث المعايير العلمية والممارسات المعتمدة عالمياً لمكافحة العدوى.
+                    </p>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl transition duration-300">
+                    <div class="w-12 h-12 bg-medical-100 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-6 h-6 text-medical-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-medical-900 mb-3">استشارات الجودة والتحليل الإحصائي</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        تحليل المؤشرات الحيوية للمنشآت الصحية باستخدام أدوات متقدمة لتحديد الثغرات وتحسين كفاءة السلامة البيئية وتقديم تقارير دقيقة لأصحاب القرار.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-medical-900">ما الذي يجعل حلولنا فريدة؟</h2>
+                <p class="text-gray-500 mt-4">الفارق الحقيقي يكمن في دمج التخصص الطبي الفريد بالقدرة البرمجية المرنة.</p>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-gray-100 p-8 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <h3 class="text-2xl font-bold text-medical-900 mb-6">رؤية علمية بأدوات تقنية حديثة</h3>
+                        <ul class="space-y-4 text-gray-600">
+                            <li class="flex items-start space-x-reverse space-x-3">
+                                <span class="text-green-500 mt-1">✔</span>
+                                <span><strong>خلفية طبية متخصصة:</strong> نفهم لغة الأطباء والمستشفيات بدقة، ولا نصمم مجرد برمجيات عامة بل حلولاً صحية فعلية.</span>
+                            </li>
+                            <li class="flex items-start space-x-reverse space-x-3">
+                                <span class="text-green-500 mt-1">✔</span>
+                                <span><strong>بنية سحابية سريعة ومجانية:</strong> نعتمد على أنظمة حديثة تضمن سرعة مزامنة البيانات ودقتها بأقل تكاليف تشغيلية.</span>
+                            </li>
+                            <li class="flex items-start space-x-reverse space-x-3">
+                                <span class="text-green-500 mt-1">✔</span>
+                                <span><strong>تحليل بيانات متقدم:</strong> تحويل الجداول الإحصائية المعقدة إلى رسومات بيانية واضحة تدعم اتخاذ الإجراءات الاستباقية لمنع الأوبئة.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-blue-950 text-white p-8 rounded-2xl flex flex-col justify-center h-full shadow-inner">
+                        <p class="text-xl font-light italic leading-relaxed">
+                            "الهدف ليس مجرد جمع الجداول الورقية أو تسجيل الأرقام، بل بناء درع حماية رقمي ذكي للمستشفيات يحسن سلامة المرضى ويوفر الموارد الدوائية."
+                        </p>
+                        <span class="mt-6 block font-semibold text-sm tracking-wider">— فريق PharmaMind للحلول الصحية</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-xl text-center">
+            <h2 class="text-3xl font-bold text-medical-900">ابدأ في رقمنة منشأتك الصحية اليوم</h2>
+            <p class="text-gray-500 mt-4 mb-10">هل ترغب في الحصول على استشارة مخصصة لمؤسستك أو الاطلاع على نموذج النظام الحي؟ تواصل معنا فوراً.</p>
+            
+            <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 text-right">
+                <form class="space-y-5" onsubmit="event.preventDefault(); alert('شكرًا لتواصلك! تم إرسال الطلب الافتراضي بنجاح.');">
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">الاسم الكريم / الجهة الصحية</label>
+                        <input type="text" placeholder="مثال: مصحة العناية الفائقة أو د. أحمد" class="w-full p-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-medical-600 bg-white" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">البريد الإلكتروني أو رقم الهاتف</label>
+                        <input type="text" placeholder="مثال: info@hospital.com أو 091XXXXXXX" class="w-full p-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-medical-600 bg-white" required>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-semibold text-gray-700 mb-2">كيف يمكننا مساعدتك؟</label>
+                        <textarea rows="4" placeholder="اكتب استفسارك أو نوع النظام الذي ترغب في تجربته هنا..." class="w-full p-3 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-medical-600 bg-white" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-medical-600 text-white p-3 rounded-xl font-semibold hover:bg-medical-700 transition shadow-md">
+                        إرسال الطلب
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-medical-900 text-gray-400 py-8 text-center text-sm">
+        <div class="container mx-auto px-6">
+            <p>© 2026 PharmaMind. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
